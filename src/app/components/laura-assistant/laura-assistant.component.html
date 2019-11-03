@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-4">
+            <img id="field-image" src="../../../assets/images/virtual-assistant.jpg" />
+            <span id="field-image-title">Fale com a Laura</span>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-4" id="field-text">
+          <p *ngFor="let text of texts" >
+              {{ text }}
+          </p>
+      </div>
+    </div>
+    <div class="row" id="fields">
+        <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-4">
+            <input class="form-control" id="form-message" type="text" [(ngModel)]="userText" (keyup.enter)="funcao($event)" />
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-1">
+            <button class="btn btn-primary" (click)="send()">Enviar</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+#field-image{
+    width:100%;
+    width:75px;
+    height:auto;
+}
+
+#field-image-title{
+    font-size:25px;
+    position:relative;
+    top:12px;
+    left:10px;
+}
+
+#field-text{
+    position:relative;
+    top:12px;
+    height:250px;
+    overflow-y:scroll;
+}
+
+#fields{
+    position:relative;
+    top:25px;
+}

@@ -1,2 +1,4 @@
-# virtual-assistant-laura-client
+# Virtual Assistant Laura
+
 Project front end
+
