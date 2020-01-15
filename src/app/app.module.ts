@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LauraAssistantComponent } from './components/laura-assistant/laura-assistant.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

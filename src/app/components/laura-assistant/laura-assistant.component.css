@@ -1,16 +1,35 @@
 @import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+.photo{
+    position:relative;
+    top:-40px;
+}
+
+.chat{
+    background-color:white;
+    border-radius: 25px;
+    margin-top:125px;
+}
+
+.chat-head{
+    margin-top:15px;
+    text-align: center;
+}
+
 #field-image{
     width:100%;
     width:75px;
     height:auto;
 }
-
-#field-image-title{
+.field-title{
     font-size:25px;
-    position:relative;
-    top:12px;
-    left:10px;
+    margin-top:-30px;
+    margin-left:10px;
+    margin-bottom:0;
+}
+.field-subtitle{
+    font-size:13px;
+    color:gray;
 }
 
 #field-text{
@@ -19,8 +38,41 @@
     height:250px;
     overflow-y:scroll;
 }
+.phrase{
+    background-color:purple;
+    padding:12px;
+    border-radius:15px;
+    color:white;
+}
 
-#fields{
+.fields{
     position:relative;
-    top:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.text-custom{
+    border:none;
+    position:relative;
+    top:12px;
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-custom{
+    border-radius: 100%;
+    background-color:pink;
+    padding:20px;
+}
+.btn-image-pointer{
+    width:40px;
+    height:auto;
+}
+.btn-send{
+    position:absolute;
+    top:30px;
+    right:-80px;
 }

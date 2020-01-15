@@ -20,7 +20,7 @@ export class LauraAssistantComponent implements OnInit {
   }
 
   send(){
-    this.texts.push("Usuário: "+this.userText);
+    this.texts.push("Eu: "+this.userText);
     this.userText = '';
 
     this.lauraAssistantService.postConversation(this.texts[this.texts.length-1], true).subscribe(

@@ -1,23 +1,38 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-4">
-            <img id="field-image" src="../../../assets/images/virtual-assistant.jpg" />
-            <span id="field-image-title">Fale com a Laura</span>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-4" id="field-text">
-          <p *ngFor="let text of texts" >
-              {{ text }}
-          </p>
-      </div>
-    </div>
-    <div class="row" id="fields">
-        <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-4">
-            <input class="form-control" id="form-message" type="text" [(ngModel)]="userText" (keyup.enter)="funcao($event)" />
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-1">
-            <button class="btn btn-primary" (click)="send()">Enviar</button>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 chat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 chat-head">
+                        <div class="photo">
+                            <img class="rounded-circle" style="border:2px solid pink;" id="field-image" src="../../../assets/images/virtual-assistant.jpg" />
+                        </div>
+                        <p class="field-title">Laura Monteiro</p>
+                        <span class="field-subtitle">Converse com a assistente Virtual</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div id="field-text">
+                            <p class="phrase" *ngFor="let text of texts" >
+                                {{ text }}
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+                <div class="row">
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 fields">
+                        <input class="form-control text-custom" id="form-message" type="text" placeholder="Escreva um texto..." [(ngModel)]="userText" (keyup.enter)="funcao($event)" />
+                        
+                        <div class="btn-send">
+                            <button class="btn btn-custom" (click)="send()">
+                                <img class="btn-image-pointer" src="../../../assets/images/send.png" />                            
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
